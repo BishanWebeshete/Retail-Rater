@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header {
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .add-restaurant-button {
+  padding-left: 1.25rem;
+} */
+
+.add-restaurant-select {
+  height: 2rem;
+  width: 5rem;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhlcyUyMHNob3B8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  width: 100%;
+}
+
+.loading-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.error-container {
+  border: 0.25rem solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label-container {
+  border: 0.25rem solid black;
+  border-radius: 0.25rem;
+  padding: 0.15rem;
+  margin: 0.15rem;
+}
+
+.title {
+  margin-top: 1rem;
+  border: 0.25rem solid black;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-text {
+  padding-left: 1.5rem;
+}
+
+/* .new-store-form {
+  padding-left: 1.75rem;
+} */
+
+.update-text,
+.review-text,
+.main-text {
+  border: 0.25rem solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+tbody {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* .add-restaurant-button {
+    width: 1rem;
+  } */
+  .add-restaurant-select-container {
+    margin-bottom: 0.25rem;
   }
-  to {
-    transform: rotate(360deg);
+  .add-restaurant-select {
+    height: 2.25rem;
+    width: 140px;
+  }
+  .form-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbar-text {
+    padding-left: 4rem;
   }
 }
