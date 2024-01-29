@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.main-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-text {
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  padding-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  background-color: white;
+  max-width: 70%;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-label {
+  width: 98%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-button {
+  margin-top: 10px;
+}
+
+body {
+  background-image: url("https://us.123rf.com/450wm/thatpichai/thatpichai1703/thatpichai170300308/73868551-supermarket-store-blur-background-with-bokeh.jpg?ver=6");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  width: 100%;
+  background-color: #F9FAFB;
+}
+
+.loading-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.rating-label {
+  font-size: 1.5rem;
+}
+
+.sign-out-button {
+  margin-right: 1rem;
+  border-radius: 1rem;
+  border: solid black;
+  color: #E11D47;
+  background-color: #F1D8DB;
+}
+
+.retail-rater-text {
+  text-decoration: none;
+}
+
+.register-or-login {
+  width: 98%;
+  margin-right: 0.5rem;
+}
+
+.welcome-header {
+  font-size: 1.25rem;
+}
+
+tbody {
+  cursor: pointer;
+}
+
+.list-group {
+  padding-left: 1rem;
+  max-width: 75%;
+}
+
+.td-blue {
+  color: #0C6DFD;
+}
+
+.table-rows:hover {
+  background-color: lightblue;
+  opacity: 0.5;
+}
+
+.trash-icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .list-group {
+    max-width: 90%;
+    overflow-x: scroll;
   }
-  to {
-    transform: rotate(360deg);
+  .form {
+    max-width: 85%;
   }
 }
